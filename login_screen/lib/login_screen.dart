@@ -14,15 +14,18 @@ class _ScreenState extends State<Screen> {
       body: Center(
         child: Column(
           children: [
+            const SizedBox(
+              height: 100,
+            ),
             Container(
-              padding: const EdgeInsets.all(10),
+              height: 210,
+              width: 220,
               child: Image.network(
-                  "https://cdn1.vectorstock.com/i/thumb-large/97/70/purple-user-icon-in-the-circle-a-solid-gradient-vector-23519770.jpg"),
+                  "https://www.kindpng.com/picc/m/495-4952535_create-digital-profile-icon-blue-user-profile-icon.png"),
             ),
             const SizedBox(
               height: 30,
             ),
-            const Text("nameController")
           ],
         ),
       ),

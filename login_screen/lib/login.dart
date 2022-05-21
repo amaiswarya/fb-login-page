@@ -19,6 +19,9 @@ class _LoginState extends State<Login> {
     return Scaffold(
         body: Center(
             child: Column(children: [
+      const SizedBox(
+        height: 80,
+      ),
       Container(
           padding: const EdgeInsets.all(10),
           decoration: BoxDecoration(borderRadius: BorderRadius.circular(8)),
@@ -26,7 +29,7 @@ class _LoginState extends State<Login> {
           child: const Text(
             "facebook",
             style: TextStyle(
-              fontSize: 30,
+              fontSize: 35,
               color: Colors.blue,
               fontWeight: FontWeight.w800,
             ),
