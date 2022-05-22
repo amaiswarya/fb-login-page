@@ -26,6 +26,14 @@ class _ScreenState extends State<Screen> {
             const SizedBox(
               height: 30,
             ),
+            Row(
+              children: [
+                const Text(
+                  "Welcome Aiswarya",
+                  style: const TextStyle(fontSize: 35),
+                )
+              ],
+            )
           ],
         ),
       ),
