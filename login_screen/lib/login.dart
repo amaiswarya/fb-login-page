@@ -80,8 +80,10 @@ class _LoginState extends State<Login> {
             width: 500,
             child: ElevatedButton(
                 onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => const Screen()));
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const Screen(name: '')));
                 },
                 child: const Text(
                   "Log In",
@@ -92,6 +94,7 @@ class _LoginState extends State<Login> {
         height: 20,
       ),
       Row(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: const [
           Text(
             "Does not have account? ",
@@ -106,7 +109,6 @@ class _LoginState extends State<Login> {
                 fontSize: 25, color: Colors.blue, fontWeight: FontWeight.bold),
           ),
         ],
-        mainAxisAlignment: MainAxisAlignment.center,
       )
     ])));
   }

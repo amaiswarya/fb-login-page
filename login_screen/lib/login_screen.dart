@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Screen extends StatefulWidget {
-  const Screen({Key? key}) : super(key: key);
+  final String name;
+  const Screen({Key? key, required this.name}) : super(key: key);
 
   @override
   State<Screen> createState() => _ScreenState();
@@ -28,8 +29,8 @@ class _ScreenState extends State<Screen> {
             ),
             Row(
               children: [
-                const Text(
-                  "Welcome Aiswarya",
+                Text(
+                  widget.name,
                   style: const TextStyle(fontSize: 35),
                 )
               ],
