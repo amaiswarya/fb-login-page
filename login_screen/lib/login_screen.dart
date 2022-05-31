@@ -27,14 +27,17 @@ class _ScreenState extends State<Screen> {
             const SizedBox(
               height: 30,
             ),
-            Row(
-              children: [
-                Text(
-                  widget.name,
-                  style: const TextStyle(fontSize: 35),
-                )
-              ],
-            )
+            const Text(
+              "Welcome ",
+              style: TextStyle(fontSize: 35),
+              textAlign: TextAlign.center,
+            ),
+            SizedBox(
+              height: 35,
+            ),
+            Text(widget.name,
+                style: const TextStyle(fontSize: 22),
+                textAlign: TextAlign.center)
           ],
         ),
       ),
